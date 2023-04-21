@@ -15,7 +15,7 @@ export const login = createAsyncThunk(
   async (userData, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://10.8.10.40:5000/user/login",
+        "https://10.8.10.40:5000/user/login",
         userData
       );
       toast.success("Succesfully Login", {
