@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { navigate } from "@reach/router";
 
 const initialState = {
   user: [],
@@ -92,9 +91,9 @@ const authApi = createSlice({
 export default authApi.reducer;
 
 function navigateToHome() {
-  return navigate("/home");
+  // return navigate("/home");
 }
 
 function navigateToLogin() {
-  return navigate("/login");
+  // return navigate("/login");
 }
